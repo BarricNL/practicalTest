@@ -15,6 +15,7 @@ class Header extends Component{
         console.log(this.state.activated)
     }
     render(){
+        const amount = this.props.products.amount;
         return (
             <div>
             <header className='wrapper_nav'>
@@ -22,7 +23,7 @@ class Header extends Component{
                     <div className="row mr-2 justify-content-end">
                         <div className="col-1 font_xsm leter_space">
                             <div className={this.state.activated?'my_cart_text my_cart_text_activated':'my_cart_text'}>
-                                <span className='my_cart' onClick={()=>{this.handleMyCart()}}>My Cart (4)</span><span className='my_cart_icon'onClick={()=>{this.handleMyCart()}}><i className="fa fa-cart-arrow-down"> (4)</i></span>
+                                <span className='my_cart' onClick={()=>{this.handleMyCart()}}>My Cart {amount}</span><span className='my_cart_icon'onClick={()=>{this.handleMyCart()}}><i className="fa fa-cart-arrow-down"></i>{amount}</span>
                                 {
                                     this.state.activated?
                                     <div className= 'mini_cart_dropdown'>

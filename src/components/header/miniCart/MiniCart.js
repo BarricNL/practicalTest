@@ -12,6 +12,7 @@ class MiniCart extends Component{
                 {
                     prodList.map(
                         (prod,index) => {
+                            if (prod.prodSizes){
                             return(
                                 <div className='row' key={index}>
                                     <div className='col-4 mini_pic'>
@@ -24,6 +25,9 @@ class MiniCart extends Component{
                                     </div>
                                 </div>
                             )
+                            } else {
+                                return null
+                            }
                         }
                     )
                 }

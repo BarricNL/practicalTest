@@ -1,5 +1,3 @@
-import ProductDetails from "../components/body/productDetails/ProductDetails";
-
 const initialState = {
     size:null,
     selected: false,
@@ -13,11 +11,12 @@ const addToCartHandler = (state,action) => {
     state.touched = action.addToCart.touched;
     let sameSize, sameSizeIndex
     const prodList = state.prodList;
-    if(state.prodList.length === 0){
+    console.log('faewfa',action.addToCart,prodList)
+    if(state.prodList.length === 0 && action.addToCart.prodSizes){
         state.prodList.push(action.addToCart)
         state.amount++;
     }
-    else{
+    else if (action.addToCart.prodSizes){
         for(let i in prodList){
             // console.log('dsafew',prodList)
             if(prodList[i].prodSizes ===action.addToCart.prodSizes){
