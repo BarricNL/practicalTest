@@ -1,0 +1,6 @@
+{
+    "prodName": "Classic Tee",
+    "prodPrice": "$75.00",
+    "prodDetails":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in mattis nisi. Duis eu facilisis quam, et placerat nunc. Morbi mollis, lectus vel posuere semper, tortor turpis gravida ex, at aliquam quam sapien eu ante. Phasellus tincidunt.",
+    "prodSizes":["S","M","L"]
+}

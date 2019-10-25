@@ -1,0 +1,21 @@
+.wrapper_button{
+    display: table-cell;
+    border-spacing: 5px;
+}
+
+.buttonAddCart{
+    width: 140px;
+    height: 35px;
+    border: solid 1.5px #222222;
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 15px;
+}
+.buttonAddCart:hover{
+    background: #222222;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    color: white;
+}
